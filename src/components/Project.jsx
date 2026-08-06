@@ -67,10 +67,10 @@ const Project = ({ onCtaClick }) => {
           <p className="text-gray-300 text-sm md:text-base font-light leading-relaxed mb-8">
             As A Full-Stack Java Developer, I Build Production-Style Web Applications End-To-End — From Secure Spring Boot APIs To Responsive React Front Ends.
           </p>
-          <button onClick={onCtaClick} className="cursor-pointer px-6 py-2.5 rounded-full border border-[#ccff00] bg-[#ccff00] text-black font-medium text-xs md:text-sm hover:bg-[#b3e600] hover:border-[#b3e600] transition-colors flex items-center gap-2">
+          <button onClick={onCtaClick} className="cursor-pointer px-6 py-2.5 rounded-full border border-white bg-white text-black font-medium text-xs md:text-sm hover:bg-gray-200 hover:border-gray-200 transition-colors flex items-center gap-2">
             Read More
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>
           </button>
         </div>
@@ -106,10 +106,10 @@ const Project = ({ onCtaClick }) => {
                 </p>
 
                 <div className="flex items-center gap-4 flex-wrap">
-                  <button onClick={onCtaClick} className="cursor-pointer px-6 py-2.5 rounded-full border border-[#ccff00] bg-[#ccff00] text-black text-xs md:text-sm font-medium hover:bg-[#b3e600] hover:border-[#b3e600] transition-colors inline-flex items-center gap-2">
+                  <button onClick={onCtaClick} className="cursor-pointer px-6 py-2.5 rounded-full border border-white bg-white text-black text-xs md:text-sm font-medium hover:bg-gray-200 hover:border-gray-200 transition-colors inline-flex items-center gap-2">
                     Live Demo
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H18a1.5 1.5 0 011.5 1.5v10.5A1.5 1.5 0 0118 19.5H7.5A1.5 1.5 0 016 18v-4.5m3-9L21 3m0 0h-6m6 0v6" />
                     </svg>
                   </button>
                   <button onClick={onCtaClick} className="cursor-pointer px-6 py-2.5 rounded-full border border-white/30 text-white text-xs md:text-sm hover:bg-white hover:text-black transition-colors inline-flex items-center gap-2">

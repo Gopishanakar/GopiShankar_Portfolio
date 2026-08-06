@@ -143,7 +143,7 @@ const Services = () => {
             ref={(el) => itemRefs.current[index] = el}
             data-index={index}
             className={`border-b border-white/20 py-5 md:py-7 px-6 md:px-16 cursor-pointer transition-all duration-300 ease-in-out ${
-              isHighlighted ? 'bg-[#ccff00]' : ''
+              isHighlighted ? 'bg-white' : ''
             }`}
             onClick={() => setActiveIndex(activeIndex === index ? null : index)}
             onMouseEnter={() => setHoveredIndex(index)}
@@ -228,7 +228,7 @@ const Services = () => {
                      </p>
                      {service.buttonText && (
                        <button className={`font-bold uppercase tracking-wider text-xs md:text-sm px-6 py-3 border transition-colors duration-300 ease-in-out flex items-center gap-2 mt-4 ${
-                         isHighlighted ? 'bg-black text-[#ccff00] border-black' : 'bg-[#ccff00] text-black border-[#ccff00]'
+                         isHighlighted ? 'bg-black text-white border-black' : 'bg-white text-black border-white'
                        }`}>
                          <span className="w-2 h-2 border-t border-l border-current"></span>
                          {service.buttonText}
