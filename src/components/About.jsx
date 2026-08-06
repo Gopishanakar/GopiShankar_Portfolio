@@ -29,10 +29,11 @@ const About = () => {
   const textRef = useRef(null);
   const introMobileRef = useRef(null);
   const introDesktopRef = useRef(null);
+  const imageWrapRef = useRef(null);
 
   useEffect(() => {
     const headings = [introMobileRef.current, introDesktopRef.current];
-    
+
     headings.forEach((heading) => {
       if (heading) {
         gsap.fromTo(
@@ -71,11 +72,29 @@ const About = () => {
         }
       );
     }
+
+    if (imageWrapRef.current) {
+      gsap.fromTo(
+        imageWrapRef.current,
+        { y: 60, opacity: 0, scale: 0.92 },
+        {
+          y: 0,
+          opacity: 1,
+          scale: 1,
+          duration: 1.1,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: imageWrapRef.current,
+            start: 'top 85%',
+            toggleActions: 'play none none reverse',
+          },
+        }
+      );
+    }
   }, []);
 
   return (
     <section id="about" className="min-h-screen bg-[#050505] text-white pt-24 pb-0 px-6 md:px-16 flex flex-col justify-between relative overflow-hidden">
-
 
       <div className="max-w-7xl mx-auto w-full z-10">
 
@@ -89,12 +108,17 @@ const About = () => {
 
           {/* Left Column - Image */}
           <div className="flex justify-center lg:justify-start pl-0 lg:pl-20">
-            <img
-              src={aboutImage}
-              alt="Portrait Of Gopishankar"
-              loading="lazy"
-              className="w-48 md:w-56 lg:w-64 object-contain drop-shadow-2xl"
-            />
+            <div
+              ref={imageWrapRef}
+              className="w-72 md:w-96 lg:w-[28rem] shrink-0"
+            >
+              <img
+                src={aboutImage}
+                alt="Portrait Of Gopishankar"
+                loading="lazy"
+                className="w-full h-auto object-contain drop-shadow-2xl"
+              />
+            </div>
           </div>
 
           {/* Right Column - Text Content */}

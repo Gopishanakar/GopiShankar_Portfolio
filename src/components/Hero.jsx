@@ -151,11 +151,13 @@ const Hero = ({ onPreloadComplete }) => {
         ref={imageRef}
         className="relative z-10 text-center text-white flex flex-col items-center w-full pointer-events-none translate-y-[100vh]"
       >
-        <img
-          src={centerImage}
-          alt="Hero Center Graphic"
-          className="w-full max-w-md object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
-        />
+        <div className="w-[85vw] max-w-[560px] md:max-w-[680px] lg:max-w-[760px] aspect-square flex items-center justify-center">
+          <img
+            src={centerImage}
+            alt="Hero Center Graphic"
+            className="w-full h-full object-contain drop-shadow-[0_50px_50px_rgba(0,0,0,0.5)]"
+          />
+        </div>
       </div>
     </section>
   );
